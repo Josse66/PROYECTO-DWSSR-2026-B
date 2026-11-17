@@ -1,6 +1,6 @@
-Pleca Itgam
-![pleca itgam](C:/Users/ghxst/Downloads/pleca_itgam.jpg)
-
+<p align="center">
+  <img src="./pleca/pleca_itgam.jpg" alt="pleca itgam" width="100%">
+</p>
 
 # 💻 Monitoreo y detección de anomalías en un motor
 
@@ -51,8 +51,8 @@ ejecución conforme avance el proyecto.
 
 ## 👤 Autor
 
-ALVAREZ ARIAS GERARDO
-BONILLA NAVARRETE ANDRE MIKE
-CID GONZALEZ JOSE ARMANDO
-FLORIAN VALENCIA RODRIGO ALEJANDRO
-RANGEL ROCHA OSCAR ADRIAN
+- ALVAREZ ARIAS GERARDO
+- BONILLA NAVARRETE ANDRE MIKE
+- CID GONZALEZ JOSE ARMANDO
+- FLORIAN VALENCIA RODRIGO ALEJANDRO
+- RANGEL ROCHA OSCAR ADRIAN
