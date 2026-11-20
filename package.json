@@ -2,10 +2,10 @@
   "name": "proyecto-dwssr-2026-b",
   "version": "1.0.0",
   "description": "Sistema web para monitoreo y detección de anomalías en un motor (proyecto final de Desarrollo Web SSR)",
-  "main": "server/www.js",
+  "main": "server/bin/www.js",
   "scripts": {
-    "start": "node server/www.js",
-    "dev": "nodemon server/www.js",
+    "start": "NODE_ENV=production node ./server/bin/www.js",
+    "dev": "nodemon ./server/bin/www.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
@@ -25,9 +25,18 @@
   },
   "homepage": "https://github.com/Josse66/PROYECTO-DWSSR-2026-B#readme",
   "dependencies": {
-    "express": "^5.3.0"
+    "express": "^5.3.0",
+    "morgan": "~1.9.1",
+    "winston": "^3.19.0",
+    "winston-daily-rotate-file": "^5.0.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.14"
+    "@eslint/js": "^9.39.5",
+    "eslint": "^9.39.5",
+    "eslint-config-airbnb-extended": "^3.3.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.13.0",
+    "nodemon": "^3.1.14",
+    "prettier": "^3.9.10"
   }
 }
