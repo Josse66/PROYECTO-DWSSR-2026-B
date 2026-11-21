@@ -3,6 +3,7 @@
 import http from 'node:http';
 import app from '../app.js';
 import logger from '../lib/winston.js';
+import connectMongo from '../lib/mongo.js';
 
 /**
  * Normalize a port into a number, string, or false.
@@ -71,6 +72,7 @@ function onListening() {
 /**
  * Listen on provided port, on all network interfaces.
  */
+connectMongo();
 server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
