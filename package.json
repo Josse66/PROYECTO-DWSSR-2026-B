@@ -13,10 +13,13 @@
     "format:check": "prettier --check .",
     "dev:front": "vite",
     "build": "vite build",
-    "preview": "vite preview",
+    "preview": "npm run build && npm start",
     "lint:back": "eslint \"server/**/*.js\"",
     "lint:front": "eslint \"src/**/*.{js,mjs}\"",
-    "lint:all": "npm run lint:back && npm run lint:front"
+    "lint:all": "npm run lint:back && npm run lint:front",
+    "dev:vite": "vite --host",
+    "dev:all": "concurrently \"npm run dev\" \"npm run dev:vite\"",
+    "clean:logs": "rm -rf ./logs/*.log"
   },
   "repository": {
     "type": "git",
@@ -31,7 +34,11 @@
   },
   "homepage": "https://github.com/Josse66/PROYECTO-DWSSR-2026-B#readme",
   "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "debug": "^4.4.3",
     "express": "^5.3.0",
+    "express-handlebars": "^9.0.6",
+    "http-errors": "^2.0.1",
     "morgan": "~1.9.1",
     "winston": "^3.19.0",
     "winston-daily-rotate-file": "^5.0.0"
@@ -39,6 +46,7 @@
   "devDependencies": {
     "@eslint/js": "^9.39.5",
     "@tailwindcss/vite": "^4.3.5",
+    "concurrently": "^10.0.7",
     "eslint": "^9.39.5",
     "eslint-config-airbnb-extended": "^3.3.0",
     "eslint-config-prettier": "^10.1.8",
@@ -47,5 +55,9 @@
     "prettier": "^3.10.1",
     "tailwindcss": "^4.3.5",
     "vite": "^8.3.8"
+  },
+  "imports": {
+    "#server/*": "./server/*",
+    "#routes/*": "./server/routes/*"
   }
 }

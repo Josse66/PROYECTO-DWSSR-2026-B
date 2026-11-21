@@ -1,8 +1,15 @@
+// Importando los estilos de la pagina
 import './styles/main.css';
 
+// Lógica para que el botón funcione interactivamente
 document.addEventListener('DOMContentLoaded', () => {
-  const root = document.getElementById('app');
-  if (root) {
-    root.innerHTML = '<p class="p-4 text-sm font-medium">Frontend Vite + Tailwind listo</p>';
+  const btn = document.querySelector('button');
+  if (btn) {
+    btn.addEventListener('click', () => {
+      // eslint-disable-next-line no-console
+      console.log('Botón presionado');
+    });
   }
 });
+
+console.warn('🎉 Vite ⚡+ EXPRESS 🚂 Working!!');
