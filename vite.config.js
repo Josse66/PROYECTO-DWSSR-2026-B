@@ -11,7 +11,7 @@ export default defineConfig({
   plugins: [tailwindcss()],
   server: {
     port: 5173,
-    strict: true,
+    strictPort: true,
   },
   build: {
     outDir: '../dist',

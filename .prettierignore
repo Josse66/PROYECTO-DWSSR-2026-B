@@ -1,8 +1,8 @@
-{
-  "semi": true,
-  "singleQuote": true,
-  "trailingComma": "all",
-  "printWidth": 100,
-  "tabWidth": 2,
-  "arrowParens": "always"
-}
+dist
+node_modules
+package-lock.json
+.devcontainer
+.vscode
+.github
+*.config.js
+*.hbs

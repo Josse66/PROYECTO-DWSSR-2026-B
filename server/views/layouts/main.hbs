@@ -1,13 +1,16 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
   <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{title}}</title>
-    <link rel='shortcut icon' href='/favicon.ico' type='image/x-icon' />
-    <link rel='shortcut icon' href='/favicon-32x32.png' type='image/png' />
-    <link rel='shortcut icon' href='/favicon_io/favicon.ico' type='image/x-icon' />
-    <!--Carga de Script -->
-    {{! Cargando los scripts con el Helper }}
+    <link rel="icon" href="/favicon_io/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png" />
+    <link rel="apple-touch-icon" href="/favicon_io/apple-touch-icon.png" />
+    <link rel="manifest" href="/favicon_io/site.webmanifest" />
+    {{! Carga de scripts y estilos con el helper de Vite }}
     {{{viteAssets}}}
-
   </head>
   <body>
     {{{body}}}
